@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante temático de la selva peruana. Una experiencia culinaria única en el corazón de la Amazonía.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Sir Boa - Cocina Amazónica</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/src/components/index.html" class="nav__logo">
+                <img src="/src/assets/logo.png" alt="Logo Sir Boa" class="nav__logo-img">
+                Sir Boa
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#concepto" class="nav__link">Concepto</a></li>
+                    <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
+                    <li class="nav__item"><a href="#carta" class="nav__link">Carta</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <img src="/src/assets/logo.png" alt="Logo Sir Boa" class="home__img">
+                    <h1 class="home__title">Sir Boa</h1>
+                    <h2 class="home__subtitle">El Sabor de la Selva</h2>
+                    <p class="home__description">Un viaje culinario al corazón de la Amazonía peruana.</p>
+                    <a href="#reservas" class="button">Reservar Mesa</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="concepto">
+            <div class="concepto__container container grid">
+                <div class="concepto__image">
+                    <video src="/src/assets/Selva_landscape.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+                </div>
+                <div class="concepto__data">
+                    <h2 class="section__title">Nuestra Selva</h2>
+                    <span class="section__subtitle">Filosofía y Origen</span>
+                    <p class="concepto__description">
+                        En Sir Boa, celebramos la biodiversidad de la Amazonía peruana. Nuestra cocina es un homenaje a las comunidades nativas, a los ingredientes exóticos y a las tradiciones ancestrales que definen la gastronomía de la selva. Cada plato cuenta una historia, un mito, un sabor extraído directamente de la tierra.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experiencia">
+             <h2 class="section__title">La Experiencia Amazónica</h2>
+             <span class="section__subtitle">Un viaje para los sentidos</span>
+            <div class="experiencia__container container grid">
+                <article class="experiencia__card">
+                    <h3>Menú Degustación</h3>
+                    <p>Un recorrido guiado por los sabores más emblemáticos de la selva, desde el paiche y la cecina hasta frutas exóticas como el aguaje y el camu camu.</p>
+                </article>
+                <article class="experiencia__card">
+                    <h3>Coctelería de Autor</h3>
+                    <p>Nuestros cócteles están elaborados con destilados de la región y macerados con raíces, cortezas y frutos amazónicos, creando bebidas únicas.</p>
+                </article>
+                <article class="experiencia__card">
+                    <h3>Ambiente Inmersivo</h3>
+                    <p>El diseño de nuestro local te transporta a la selva, con sonidos, aromas y una decoración que evoca la riqueza natural del Amazonas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="carta">
+            <h2 class="section__title">Nuestra Carta</h2>
+            <span class="section__subtitle">Platos y Sabores</span>
+            <div class="carta__container container grid">
+                <div class="carta__item">
+                    <img src="/src/assets/Tacachoconcecina.png" alt="Patarashca de Paiche" class="carta__img">
+                    <h4>Tacacho con Cecina y Chorizo</h4>
+                    <p>Plátano bellaco frito y machacado, acompañado de cecina ahumada y chorizo regional.</p>
+                </div>
+                <div class="carta__item">
+                    <img src="/src/assets/Juanedegallina.jpeg" alt="Juane de Gallina" class="carta__img">
+                    <h4>Patarashca de Paiche</h4>
+                    <p>Filete de paiche marinado en sacha culantro y ají charapita, cocido a la parrilla envuelto en hojas de bijao.</p>
+                </div>
+                <div class="carta__item">
+                    <img src="/src/assets/Tacachoconcecina.png" alt="Tacacho con Cecina y Chorizo" class="carta__img">
+                    <h4>Juane de Gallina</h4>
+                    <p>Arroz con palillo y trozos de gallina, envuelto en hojas de bijao y cocido, un clásico amazónico.</p>
+                </div>
+            </div>
+             <div class="carta__button-container">
+                <a href="/src/components/menu-completo.html" class="button">Ver Carta Completa</a>
+            </div>
+        </section>
+
+        <section class="section" id="contacto">
+            <h2 class="section__title">Contacto y Reservas</h2>
+            <span class="section__subtitle">Estamos para servirte</span>
+            <div class="contacto__container container grid">
+                <form class="contacto__form" action="#" method="post">
+                    <div class="form__group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <h3 class="footer__title">Sir Boa</h3>
+                <ul class="footer__links">
+                    <li><a href="#concepto" class="footer__link">Concepto</a></li>
+                    <li><a href="#experiencia" class="footer__link">Experiencia</a></li>
+                    <li><a href="#carta" class="footer__link">Carta</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Legal</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Términos y Condiciones</a></li>
+                    <li><a href="#" class="footer__link">Política de Privacidad</a></li>
+                    <li><a href="#" class="footer__link">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                 <h3 class="footer__title">Síguenos</h3>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/UTP.Peru" class="footer__social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/universidadutp/" class="footer__social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@universidadutp?lang=es" class="footer__social-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__content">
+            <h3 class="footer__title">Ubicación</h3>
+            <div class="footer__map">
+                <iframe
+                    src="https://www.google.com/maps?q=-12.19392629551402,-76.9714800015593&hl=es&z=16&output=embed"
+                    width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p>&copy; 2025 Sir Boa. Todos los derechos reservados.</p>
+            <p>Desarrollado por <a href="#" class="footer__dev-link">anonimo</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+              navToggle = document.getElementById('nav-toggle'),
+              navClose = document.getElementById('nav-close');
+
+        if(navToggle){
+            navToggle.addEventListener('click', () =>{
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if(navClose){
+            navClose.addEventListener('click', () =>{
+                navMenu.classList.remove('show-menu');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* --- Carta tipo tienda online, 3 columnas, objetos simétricos y tamaño fijo --- */
+
+.carta-supermercado__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
+.carta-supermercado__item {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    width: 320px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.carta-supermercado__item:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.carta-supermercado__img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.carta-supermercado__item h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.7rem 0;
+    text-align: center;
+    color: #2e3d2f;
+}
+
+.carta-supermercado__item p {
+    font-size: 0.98rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+}
+
+.carta-supermercado__btn {
+    background: #3e7c3e;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: auto;
+}
+
+.carta-supermercado__btn:hover {
+    background: #2e5c2e;
+}
+
+/* Responsive: 2 columns on tablets, 1 on mobile */
+@media (max-width: 900px) {
+    .carta-supermercado__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .carta-supermercado__item {
+        width: 90vw;
+        max-width: 340px;
+    }
+}
+@media (max-width: 600px) {
+    .carta-supermercado__container {
+        grid-template-columns: 1fr;
+    }
+    .carta-supermercado__item {
+        width: 98vw;
+        max-width: 370px;
+    }
+}
